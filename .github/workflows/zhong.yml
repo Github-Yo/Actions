@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/jake3737/Wool.git ~/js
+          git clone https://github.com/Github-Yo/Actions.git ~/js
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
