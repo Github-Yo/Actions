@@ -31,4 +31,4 @@ jobs:
       - name: '运行 【youthshare】'
         run: |
           cd ~/js   
-          node Tast/youthshare.js
+          node Task/youthshare.js
