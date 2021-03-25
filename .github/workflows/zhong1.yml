@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/Github-Yo/youthshare.git ~/youthshare
+          git clone https://github.com/Github-Yo/Actions.git ~/youthshare
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
