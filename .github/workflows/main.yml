@@ -1,0 +1,35 @@
+name: 中青看点1
+
+on:
+  workflow_dispatch:
+  watch:
+    types: started
+  schedule:
+#    - cron: '*/30 2-10 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest       
+    steps:
+      - name: Checkout
+        run: |
+          git clone https://github.com/Github-Yo/Actions.git ~/js
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: |
+          cd ~/js
+          npm install
+          npm install cron
+          npm install request
+          npm install md5-node
+          npm install 'got' --save-dev
+      - name: '运行 【中青看点1】'
+        run: |
+          cd ~/js   
+          #node Scripts/youth1.js
+      - name: '运行 【youthshare】'
+        run: |
+          cd ~/js   
+          node Task/youthshare.js
