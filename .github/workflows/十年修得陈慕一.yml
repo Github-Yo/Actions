@@ -24,6 +24,7 @@ jobs:
           npm install
           npm install cron
           npm install md5-node
+          npm install 'got' --save-dev
           npm install request
           curl ipinfo.io/json
           
