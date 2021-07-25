@@ -1,4 +1,4 @@
-name: 伟哥
+name: 十年修得陈慕一
 on:
   workflow_dispatch:
   watch:
@@ -27,7 +27,7 @@ jobs:
           curl ipinfo.io/json
           
           
-      - name: '【伟哥】'
+      - name: '【十年修得陈慕一】'
         run: |  
           cd ~/Actions/Task
           node youthshare.js    
