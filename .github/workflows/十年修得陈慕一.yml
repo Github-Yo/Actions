@@ -23,6 +23,7 @@ jobs:
           cd ~/Actions      
           npm install
           npm install cron
+          npm install md5-node
           npm install request
           curl ipinfo.io/json
           
